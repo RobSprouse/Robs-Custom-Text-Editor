@@ -19,6 +19,11 @@ h1 {
      font-size: 22px;
 }
 
+.CodeMirror {
+     height: calc(100vh - var(--navbar-height));
+     background-color: var(--monoaki);
+     color: var(--whitesmoke);
+}
 #navbar {
      height: var(--navbar-height);
      background-color: var(--primary);
@@ -189,6 +194,10 @@ h1 {
 
 .btn.btn-link:hover {
      background-color: #31a9e1;
+}
+
+.hidden {
+     display: none;
 }
 
 @media only screen and (max-width: 600px) {
