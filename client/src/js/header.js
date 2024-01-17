@@ -1,3 +1,4 @@
+// COMMENT: defines the header for the editor
 const header = `
 /*
        _____  ____________

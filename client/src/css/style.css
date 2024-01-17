@@ -1,4 +1,5 @@
 /* app shell CSS */
+/* COMMENT: style variables defined */
 :root {
      --primary: #31a9e1;
      --gray: #ececec;
@@ -8,6 +9,7 @@
      --navbar-height: 50px;
 }
 
+/* COMMENT: Body and h1 styles */
 body {
      margin: 0;
      background-color: var(--monoaki);
@@ -19,11 +21,14 @@ h1 {
      font-size: 22px;
 }
 
+/* COMMENT: styles for the area where the code by the user will be entered */
 .CodeMirror {
      height: calc(100vh - var(--navbar-height));
      background-color: var(--monoaki);
      color: var(--whitesmoke);
 }
+
+/* COMMENT: navbar styles */
 #navbar {
      height: var(--navbar-height);
      background-color: var(--primary);
@@ -41,6 +46,7 @@ h1 {
      padding-top: 10px;
 }
 
+/* COMMENT: loading spinner and container styles */
 .loading-spinner {
      animation-duration: 0.75s;
      animation-iteration-count: infinite;
@@ -60,26 +66,29 @@ h1 {
      height: calc(100vh - var(--navbar-height));
 }
 
+/* Define a keyframes animation named 'rotate-forever' */
 @keyframes rotate-forever {
      0% {
           transform: rotate(0deg);
      }
-
      100% {
           transform: rotate(360deg);
      }
 }
 
+/* Style rules for the 'app-update' class */
 .app-update {
      display: none;
      position: absolute;
      right: 10px;
 }
 
+/* Additional style rules for the 'app-update' class when it also has the 'show' class */
 .app-update.show {
      display: block;
 }
 
+/* COMMENT: style for the button */
 .nav-btn {
      margin: 25px;
 }
@@ -196,10 +205,12 @@ h1 {
      background-color: #31a9e1;
 }
 
+/* COMMENT: defines a hidden class to hide an element */
 .hidden {
      display: none;
 }
 
+/* COMMENT: media query for smaller screens */
 @media only screen and (max-width: 600px) {
      .nav-btn {
           display: none;

@@ -1,11 +1,14 @@
+// COMMENT: imports the header
 import { Workbox } from "workbox-window";
 import Editor from "./editor";
 import "./database";
 import "../css/style.css";
 
+// COMMENT: defines the main element
 const main = document.querySelector("#main");
 main.innerHTML = "";
 
+// COMMENT: creates a method to load the spinner
 const loadSpinner = () => {
      const spinner = document.createElement("div");
      spinner.classList.add("spinner");
@@ -17,8 +20,10 @@ const loadSpinner = () => {
      main.appendChild(spinner);
 };
 
+// COMMENT: creates a new instance of the editor
 const editor = new Editor();
 
+// COMMENT: loads the spinner if the editor is undefined
 if (typeof editor === "undefined") {
      loadSpinner();
 }
