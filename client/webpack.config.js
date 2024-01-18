@@ -58,20 +58,17 @@ module.exports = () => {
                               src: path.resolve(__dirname, "./src/images/JATE_wide.jpg"),
                               sizes: "640x320",
                               type: "image/jpeg",
-                              form_factor: "wide",
                               label: "Main Screen",
                          },
                          {
                               src: path.resolve(__dirname, "./src/images/JATE.jpg"),
                               sizes: "320x640",
                               type: "image/jpeg",
-                              form_factor: "tall",
                               label: "Main Screen",
                          },
                     ],
                }),
                new copyWebpackPlugin({
-                    // copies the favicon to the dist folder
                     patterns: [
                          {
                               from: "./favicon.ico",
