@@ -4,7 +4,7 @@
 
 ## Description:
 
-This repository was created as a part of the University of Richmond's Bootcamp, Module 19 Challenge. The challenge was to build a text editor that runs in the browser. The app is a single-page application that meets the PWA criteria. Additionally, it features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application also functions offline.
+This repository was created as a part of the University of Richmond's Bootcamp, Module 19 Challenge. The challenge was to build a text editor that runs in the browser. The app is a single-page application that meets the PWA criteria. The application also functions offline. The application was built using React, Node.js, Express.js, IndexedDB, and Webpack. The application is deployed to Heroku at the following URL: https://robs-custom-text-editor-37c320f23a5f.herokuapp.com/
 
 The following User Story and Acceptance Criteria were provided for this challenge:
 
