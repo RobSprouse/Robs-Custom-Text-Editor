@@ -58,3 +58,52 @@ The following User Story and Acceptance Criteria were provided for this challeng
 ## Installation
 
 This application has been deployed to a live site at the following URL: https://robs-custom-text-editor-37c320f23a5f.herokuapp.com/
+
+If you would like to see this application in its development environment, please follow the instructions below.
+
+This application requires Node.js to run. Please visit https://nodejs.org/en/ to download Node.js if it is not already installed on your computer.
+
+If you are unfamiliar with cloning a repository, please click on the following link to learn: [Github docs | Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+To install this application locally, clone the repository, navigate to its directory in the terminal, and run `npm install` in the command line to install the required dependencies.
+
+The following scripts are available to run in the command line from the root directory of the project:
+
+```json
+     "scripts": {
+          "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+          "start": "npm run build && cd server && node server.js",
+          "server": "cd server node server.js --ignore client",
+          "build": "cd client && npm run build",
+          "install": "cd server && npm i --omit=dev && cd ../client && npm i --omit=dev",
+          "client": "cd client && npm start"
+     },
+```
+
+Use the command `npm run start` to start the server and run the application. Navigate to http://localhost:3001/ in your browser to view the application.
+
+## Usage
+
+After navigating to the application in your browser, you will see the following screen:
+
+<img src="screenshots/robs-custom-text-editor-37c320f23a5f.herokuapp.com_.png">
+
+To use the application, click on the text area and begin typing. The text will be saved when the DOM window is unfocused. If you close the browser and reopen it, the text will be retrieved from the database and displayed in the text area.
+
+To install the application, click on the install button in the address bar of your browser or the install button in the header of the application. The application will be installed on your computer and can be opened from your desktop. The application will function offline.
+
+## License
+
+This application is licensed under the MIT license. See the following link for more information: https://opensource.org/licenses/MIT
+
+## Contributing
+
+Feel free to contribute to this project! Please fork the repository and create a pull request with your changes.
+
+## Tests
+
+No tests are included in this application.
+
+## Questions
+
+If you have any questions, please contact me at drgstriker@aol.com. You can also visit my GitHub profile at https://github.com/RobSprouse.
