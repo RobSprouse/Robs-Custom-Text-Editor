@@ -9,7 +9,7 @@ const copyWebpackPlugin = require("copy-webpack-plugin");
 // COMMENT: defines the exports for the webpack configuration
 module.exports = () => {
      return {
-          mode: "development",
+          mode: "production",
           entry: {
                // defines the entry points for the webpack build
                main: "./src/js/index.js",
